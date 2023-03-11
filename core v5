@@ -1,0 +1,102 @@
+getgenv().SecureMode = true
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+local Window = Rayfield:CreateWindow({
+    Name = "Rain v.6",
+    LoadingTitle = "Rin v.6 loaded,
+    LoadingSubtitle = "by inyhubhutt",
+    ConfigurationSaving = {
+       Enabled = true,
+       FolderName = khols UI, -- Create a custom folder for your hub/game
+       FileName = "khols UI"
+    },
+    Discord = {
+       Enabled = false,
+       Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD.
+       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+    },
+    KeySystem = true, -- Set this to true to use our key system
+    KeySettings = {
+       Title = "Sirius Hub",
+       Subtitle = "Key System",
+       Note = "Join the discord (discord.gg/sirius)",
+       FileName = "KholsUI",
+       SaveKey = true,
+       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+       Key = "bhutt"
+    }
+ })
+
+ local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
+ local Section = Tab:CreateSection("Main")
+
+ Rayfield:Notify({
+    Title = "message from inyuhbhutt",
+    Content = "gui loaded made by inyuhbhutt",
+    Duration = 6.5,
+    Image = 4483362458,
+    Actions = { 
+       Ignore = {
+          Name = "inyuhbhutt",
+          Callback = function()
+          print("The user tapped Okay!")
+       end
+    },
+ },
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "AFK",
+    Callback = function()
+        chatted("name me [AFK]") --AFK command i made
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "s hop or crash",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/jjjiiw/crash-script/main/crash%20script"))();
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "crash",
+    Callback = function()
+        chatted("gear me 94794847 94794847 94794847 94794847 94794847 size me 0.3 size me 0.3 size me 0.3 h outcrashing rookies ")
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "credtis",
+    Callback = function()
+    chatted(" h/ core V4 made by inyuhbhut ")
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "IY",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "lagger",
+    Callback = function()
+    chatted("gear others 25741198 gear others 25741198 gear others 25741198")
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "paint ",
+    Callback = function()
+    chatted("gear me 18474459")
+    end,
+ })
+
+ local Button = Tab:CreateButton({
+    Name = "anti-gear", -- you can't use any gears
+    Callback = function()
+    chatted(":ungear all")
+    end,
+ })
+ Rayfield:LoadConfiguration()
